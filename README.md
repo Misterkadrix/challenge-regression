@@ -42,14 +42,16 @@ What we will see is a graph with the correlation between our target and features
 
 ## How it works
 <h3> Data Cleaning </h3>
-For the Data Set we had to clean by deleting  
-  - Duplicates  
-  - NAN  
-  - Text Data  
-  - Features that have too strong correlation between them  
+For the Data Set we had to clean by deleting   
+
+- Duplicates  
+- NAN  
+- Text Data  
+- Features that have too strong correlation between them  
   
 <h3> Data Formatting </h3>
 Format the Data for machine learning  
+
   - Divide your X and your y  
   - Divide your dataset for training and testing. (X_train, y_train, X_test, y_test)  
 
