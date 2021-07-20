@@ -2,7 +2,7 @@
 
 <h3>Becode AI training
 
-group assignment: Regression</h3>
+Group assignment: Regression && Machine Learning</h3>
 
 
 <img width = "200" src = /images/BeCode_Logo.png>
@@ -21,8 +21,9 @@ group assignment: Regression</h3>
 
 ## Description
 
-We have create a machine learning model to predict prices on Belgium's real estate sales.
-We did take data from Immo Web, clean the dataset and then use it to test it on our model.
+We have create a machine learning model to predict prices on Belgium's real estate sales and apply a linear regression.
+We did take data from Immo Web, clean the dataset and then use it to test it on our model.  
+Those data will be used to preprocess it for our machine Learning
 
 
 ## Installation
@@ -40,6 +41,18 @@ pip install [required library]
 What we will see is a graph with the correlation between our target and features. 
 
 ## How it works
+<h3> Data Cleaning </h3>
+For the Data Set we had to clean by deleting  
+  - Duplicates  
+  - NAN  
+  - Text Data  
+  - Features that have too strong correlation between them  
+  
+<h3> Data Formatting </h3>
+Format the Data for machine learning  
+  - Divide your X and your y  
+  - Divide your dataset for training and testing. (X_train, y_train, X_test, y_test)  
+
 The model works with our DataSet.. Each values coming from that one will be transform into X and Y and be used on our MODEL who will predict the prices of houses.
 
 ## Examples
