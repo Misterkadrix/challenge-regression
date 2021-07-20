@@ -37,10 +37,10 @@ pip install [required library]
 
 ## Output
 
-What we will see is predict prices 
+What we will see is a graph with the correlation between our target and features. 
 
 ## How it works
-The model works with our DataSet.. Each values coming from that one will be transform into X and Y and be used on our MODEL who will predict the prices of houses
+The model works with our DataSet.. Each values coming from that one will be transform into X and Y and be used on our MODEL who will predict the prices of houses.
 
 ## Examples
   
@@ -49,8 +49,9 @@ The model works with our DataSet.. Each values coming from that one will be tran
 ## Authors
 [Ceren Morey](https://github.com/c-morey) - Project Manager/dev & doc  
 [Atefeh Hossein](https://github.com/atefehhosseinniay) - dev & doc  
-[Lyes Rouabah](https://github.com/lyesds) - dev & doc 
+[Lyes Rouabah](https://github.com/lyesds) - dev & doc  
 [Kadri Salija](https://github.com/Misterkadrix?tab=repositories) - dev & doc
+
 
 ## Languages and tools
 <p float="left">
