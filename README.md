@@ -59,5 +59,5 @@ The model works with our DataSet.. Each values coming from that one will be tran
 <img height="32" width="32" src="https://image.flaticon.com/icons/png/512/25/25231.png" />
 <img height="32" width="32" src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png'>
 <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png" />
- <img height="32" width="32" src="https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/plotly.png" />
+ 
  </p>
