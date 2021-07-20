@@ -5,5 +5,5 @@
 group assignment: Regression</h3>
 
 
-<img width = "200" src = /BeCode_Logo.png>
+<img width = "200" src = /images/BeCode_Logo.png>
 </div>
