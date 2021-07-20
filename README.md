@@ -41,6 +41,11 @@ What we will see is predict prices
 
 ## How it works
 The model works with our DataSet.. Each values coming from that one will be transform into X and Y and be used on our MODEL who will predict the prices of houses
+
+## Examples
+  
+  *Waiting For A Graph Image*
+
 ## Authors
 [Ceren Morey](https://github.com/c-morey) - Project Manager/dev & doc  
 [Atefeh Hossein](https://github.com/atefehhosseinniay) - dev & doc  
