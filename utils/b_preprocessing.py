@@ -48,3 +48,12 @@ ds = preprocess()
 print(ds.iloc[:, [8, 9, 26]].head(30).to_markdown())
 ds.info()
 '''
+
+ds = preprocess()
+#ds.info()
+
+#Here are the numeric Type for HOUSE AND APPARTMENT We do create a new column
+ds['Type_numeric'] = ds['type'].replace({'HOUSE':0,'APARTMENT':1})
+#ds['SubType_House_numeric'] = ds['subtype'].replace({'HOUSE':0,'MANSION':1,'APARTMENT':1,'BUNGALOW':1,'CASTLE':1,'CHALET':1,'COUNTY_COTTAGE':1,'DUPLEX':1,'':1})
+
+ds.to_csv('test.csv', sep=",")
