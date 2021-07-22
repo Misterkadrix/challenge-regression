@@ -26,9 +26,9 @@ The aim of the project is to use the dataset that was previously scraped on Immo
 |   [<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python logo" width="44">](https://www.python.org/) | [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="go logo" width="38">](https://jupyter.org/)  | [<img src="https://www.scipy.org/_static/images/numpylogoicon.png" alt="cpp logo" width="44">](https://numpy.org/)  |     [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/1200px-Pandas_mark.svg.png" alt="bash logo" width="44">](https://geopandas.org/)| [<img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="bash logo" width="64">](https://seaborn.pydata.org/) | [<img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="bash logo" width="54">](https://scikit-learn.org/stable/)
 |---|---|---|---|---|---|
 
-- [X]  [Python](https://www.python.org/) : A programming language
-- [X]  [Jupyter](https://jupyter.org/) : An open document format based on JSON
-- [X]  [Numpy](https://numpy.org/) : The fundamental package for scientific computing with Python
+- [X]  [Python](https://www.python.org/) : A programming language.
+- [X]  [Jupyter](https://jupyter.org/) : An open document format based on JSON.
+- [X]  [Numpy](https://numpy.org/) : The fundamental package for scientific computing with Python.
 - [X]  [Pandas](https://pandas.pydata.org/) : A fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
 - [X]  [Seaborn](https://pandas.pydata.org/) : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 - [X]  [Scikit-learn](https://scikit-learn.org/stable/) : Scikit-learn provides simple and efficient tools for predictive data analysis.
