@@ -5,8 +5,9 @@
 
 Group Assignment: Regression & Machine Learning</h3>
 
-<img width = "200" src = /images/BeCode_Logo.png>
+<img width = "100" src = /images/BeCode_Logo.png>
 </div>
+
 
 
 
