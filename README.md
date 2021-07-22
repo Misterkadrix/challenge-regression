@@ -62,24 +62,6 @@ git clone https://github.com/Misterkadrix/challenge-regression.git
 pip install [required library]
 ```
 
-# Regression
-
-## Table of contents
-[Description](#Description)  
-[Installation](#Installation)  
-[Output](#Output)  
-[How it works](#How-it-works)  
-[Examples](#Examples)  
-[Authors](#Authors)
-
-## Description
-
-We have create a machine learning model to predict prices on Belgium's real estate sales and apply a linear regression.
-We did take data from Immo Web, clean the dataset and then use it to test it on our model.  
-Those data will be used to preprocess it for our machine Learning
-
-
-
 ### The process
 
 **Data Preprocessing**
