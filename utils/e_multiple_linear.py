@@ -53,6 +53,3 @@ def multiple_regression_selected_features(ds):
 
     return ('Multiple Linear Regression, R squared Score: {:.2f}'.format(multiple_linear_regression.score(X, y) * 100))
 
-
-multiple_linear_regression_features_selected = multiple_regression_selected_features()
-print(multiple_linear_regression_features_selected)
