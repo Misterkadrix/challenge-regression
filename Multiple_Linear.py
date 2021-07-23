@@ -1,4 +1,3 @@
-from utils.b_preprocessing import preprocess
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -8,9 +7,12 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 
 
-def multiple_regression_selected_features():
+def multiple_regression_selected_features(ds):
     
-    ds = preprocess ()
+    '''
+    This functions take the preprocessed dataset(ds) as an argument, runs a multiple linear regression, and returns its score.
+    '''
+    
 
     # Creating a sublist from the columns to put on a heatmap and see their correlations
     for_sns = ds[
@@ -54,9 +56,5 @@ def multiple_regression_selected_features():
     rootMeanSqErr = np.sqrt(metrics.mean_squared_error(y_test, y_pred_mlr))
 
     return ('Multiple Linear Regression, R squared Score: {:.2f}'.format(multiple_linear_regression.score(X, y) * 100))
-
-
-multiple_linear_regression_features_selected = multiple_regression_selected_features()
-print(multiple_linear_regression_features_selected)
  
   
