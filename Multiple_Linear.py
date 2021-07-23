@@ -10,7 +10,7 @@ from sklearn import metrics
 def multiple_regression_selected_features(ds):
     
     '''
-    This functions take the preprocessed dataset(ds) as an argument, runs a multiple linear regression, and returns its score.
+    This function takes the preprocessed dataset(ds) as an argument, runs a multiple linear regression, and returns its score.
     '''
     
 
