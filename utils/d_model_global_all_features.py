@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 
 plt.style.use('seaborn-muted')
 
-def model_global_all_features():
+def model_global_all_features(ds):
     """
     Multiple linear regression with all numeric variables from the cleaned and preprocessed dataset.
     :return: the score (R² score, or accuracy) of the model and a plot
     """
-    ds = preprocess()
+
     ds2 = ds.select_dtypes(exclude=['object']) # ds2 serves as baseline for features, first exclude categorical columns
     del ds2['price'] # the target
     del ds2['terrace_area'] # too many NaN and use of new column 'median_terrace_area' instead
