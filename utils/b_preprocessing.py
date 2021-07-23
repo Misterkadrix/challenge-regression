@@ -6,10 +6,12 @@ import tabulate
 
 def preprocess():
     """
-    Basic preprocessing of the raw dataset:
+    Cleaning and preprocessing of the raw dataset:
     a) dropping rows without price or area
     b) dropping duplicates
-    c) computing few new features
+    c) dropping outliers for prices, rooms number; plus discarding group properties: mixed used and blocks
+    d) filling missing values for terrace and garden surfaces, and facades
+    e) dummy variables for categorical columns
     :return:
     """
     ds = raw_and_add_admin()
@@ -26,13 +28,6 @@ def preprocess():
     print('Data after dropping duplicates (zip/type/subtype/price/area/bedrooms)')
     print(ds.shape)
 
-    """
-    # price/square meter new feature
-    ds['priceSqMeter'] = ds.price/ds.area
-    print('Data with additional feature')
-    print(ds.shape)
-    """
-
     # prices between 80k€ and 2M€
     ds = ds[(80000 <= ds.price) & (ds.price <= 2e6)]
 
@@ -42,15 +37,6 @@ def preprocess():
     # bedrooms <15
     ds = ds[ds.room_number < 15]
 
-
-    """
-    # 1. Create the encoder
-    encoder = OneHotEncoder(sparse=False, drop='if_binary',  handle_unknown='ignore')
-    # 2. Fit the encoder to the categorical columns
-    encoder.fit(ds[['type', 'subtype', 'building_condition', 'Region', 'Province']])
-    ds[['type', 'subtype', 'building_condition', 'Region', 'Province']] = encoder.transform(ds[['type', 'subtype', 'building_condition', 'Region', 'Province']])
-    """
-
     # Convert missing values with median score for terrace and garden area, and facade count
     # Creating new columns for median scores (except the land_surface column)
     ds['median_terrace_area'] = np.nan
@@ -58,7 +44,6 @@ def preprocess():
     ds['median_facade'] = np.nan
 
     # Check median of these 3 variable
-
     print(ds['terrace_area'].median(), ds['garden_area'].median(), ds['facade_count'].median())
 
     # TERRACE
@@ -96,6 +81,9 @@ def preprocess():
 
     ds = pd.concat([ds, subtype_num, building_condition_num, region_num, province_num], axis=1)
 
+    # Fill with zero land_surface for apartments
+    ds['land_surface'] = np.where(ds['type_num'] == 0, 0, ds['land_surface'])
+
     print('Data after complete cleaning and preprocessing')
     print(ds.shape)
 
@@ -107,7 +95,6 @@ ds = preprocess()
 print(ds.iloc[:, [8, 9, 26]].head(30).to_markdown())
 print(ds.info())
 print(ds.head(30).to_markdown())
-'''
 
-ds = preprocess()
 ds.to_csv('data/data_preprocessed.csv', sep=",")
+'''

@@ -16,7 +16,11 @@ plt.show()
 plt.boxplot(ds.area)
 plt.title('Area in m²')
 plt.show()
+plt.boxplot(ds.land_surface)
+plt.title('Land surface in m²')
+plt.show()
 
+'''
 plt.title('# Properties in dataset, by Regions')
 plt.pie(ds.Region.value_counts(normalize=True).values,
         labels=ds.Region.value_counts(normalize=True).index.values, startangle=90, autopct='%1.1f%%')
@@ -35,14 +39,14 @@ plt.pie(ds.subtype.value_counts(normalize=True).values,
 plt.savefig("assets/" + datetime.now().strftime("%Y%m%d_%I%M%S%p") + "_" + "subtype_properties.png", transparent=True)
 plt.show()
 
-'''
+''
 plt.title('Equipped kitchen or not')
 plt.pie(ds.FullyEquippedKitchen.value_counts(normalize=True).values,
         labels=ds.FullyEquippedKitchen.value_counts(normalize=True).index.values, startangle=90, autopct='%1.1f%%')
 #plt.legend(loc='lower right')
 plt.savefig("assets/" + datetime.now().strftime("%Y%m%d_%I%M%S%p") + "_" + "kitchen_install.png", transparent=True)
 plt.show()
-'''
+''
 
 fig, ax = plt.subplots()
 ax.xaxis.set_major_formatter('€{x:1.1f}M')
@@ -70,3 +74,4 @@ plt.title('Distribution of the price/m²')
 plt.grid(True)
 plt.savefig("assets/" + datetime.now().strftime("%Y%m%d_%I%M%S%p") + "_" + "price_sqmeter_distribution.png", transparent=True)
 plt.show()
+'''
