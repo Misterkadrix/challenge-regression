@@ -1,2 +1,0 @@
-# challenge-regression
-Consolidation
